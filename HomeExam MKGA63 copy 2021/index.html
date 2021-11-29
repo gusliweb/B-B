@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Wei Li">
+
+    <title>Phoenix's Pinnacle Alpes B and B </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bxslider@4.2.14/dist/jquery.bxslider.min.css" integrity="sha256-0MhmGD1cJKW5AXubF75G3LpaYwtfXxTENG8ff+Fu3W4=" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+
+
+
+    
+
+
+</head>
+
+<body>
+    <header class="site-header">
+        <nav>
+            <ul id="main-menu">
+                <!-- remove active -->
+
+                <!--  <li><a href="#Home">Home</a></li> --->
+
+
+                <li><a href="#Our-Vision">Our Vision</a></li>
+
+
+                <li><a href="#The-Room-Type">The Room Type</a></li>
+
+
+                <li><a href="#Reserve-A-Room">Reserve a room</a></li>
+
+
+                <li><a href="#Contact-Us">Contact Us </a></li>
+
+            </ul>
+        </nav>
+
+        <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.menu-toggle').click(function() {
+                $('header nav ul').toggleClass('active')
+
+            });
+        });
+
+    </script>
+    <div class="header-image">
+        <img src="src_img/431209%20revision%20new1.jpg" alt="logo and title image">
+        <!--i created image in photoshop--->
+    </div>
+
+
+
+
+    <div id="Our-Vision">
+        <h2>Our Vision</h2>
+
+
+        <div class="row">
+            <div class="column" style="background-color:#aaa;">
+                <h3>Our Resteraunt</h3>
+                <img src="src_img/dinning_place1.jpg" alt="resteraunt" class="center">
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et eros non risus pulvinar tincidunt. Etiam varius nibh eu dolor ornare tristique. Vivamus magna nulla, pulvinar eu urna in, fringilla consequat ipsum. Nulla eu volutpat mauris. Praesent sed dolor vitae</p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h3> Outdoor Pub</h3>
+                <img src="src_img/outdoor_pubs.jpg" alt="pubs image" class="center">
+                <!---    https://www.telegraafhotel.com/restaurant-tchaikovsky/ -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et eros non risus pulvinar tincidunt. Etiam varius nibh eu dolor ornare tristique. Vivamus magna nulla, pulvinar eu urna in, fringilla consequat ipsum. Nulla eu volutpat mauris. Praesent sed dolor vitae..</p>
+            </div>
+            <div class="column" style="background-color:#bbb;">
+                <h3>Our facilities</h3>
+                <img src="src_img/Jacuuzi.jpg" alt="Jacuuzi" class="center">
+                <!---    https://www.telegraafhotel.com/restaurant-tchaikovsky/ -->
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis et eros non risus pulvinar tincidunt. Etiam varius nibh eu dolor ornare tristique. Vivamus magna nulla, pulvinar eu urna in, fringilla consequat ipsum. Nulla eu volutpat mauris. Praesent sed dolor vitae..</p>
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+    <div id="The-Room-Type">
+        <h2>The Room Type</h2>
+        <div id="bxslider">
+            <div>
+                <h3> Alpes HoneyMoon/SEK850 per night (Room Quantity: 3, Size: 18 m^2, Bed: one double bed, Bathroom: yes, Wifi: yes)</h3>
+                <img src="src_img/room1_new.jpg" alt="room1">
+                <!-- https://picjumbo.com/premium/salmon-steak/-->
+            </div>
+            <div>
+                <h3>Alpes Paradise/SEK1200 per night (Room Quantity: 2, Size: 20 m^2, Bed: one double bed, Bathroom: yes, Wifi: yes)</h3>
+                <img src="src_img/room4_new.jpg" alt="room2">
+                <!--- https://www.pixtastock.com/photo/31315219  -->
+            </div>
+            <div>
+                <h3>Delux Alpes Paradise /SEK1800 per night (Room Quantity: 1, Size: 25 m^2, Bed: one king bed, Bathroom: yes, Wifi: yes, Jacuuzi access: Yes)</h3>
+                <img src="src_img/room8_new.jpg" alt="room3">
+                <!---https://best-wallpaper.net/Steak-meat-barbecue_wallpapers.html-->
+            </div>
+
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bxslider@4.2.14/dist/jquery.bxslider.min.js" integrity="sha256-bApToFmuJpZdnsmRs0zWIEcaHoYxJaZ/+uUAUK6tZd8=" crossorigin="anonymous"></script>
+        <script>
+            $("#bxslider").bxSlider();
+
+        </script>
+    </div>
+
+    <div id="Reserve-A-Room">
+
+        <h2> Reserve A Room</h2>
+
+        <div class="container">
+
+            <form method="get" enctype="application/x-www-form-urlencoded" action="/html/codes/html_form_handler.cfm">
+
+                <p>
+                    <label>Name</label>
+                    <input type="text" name="customer_name" required>
+
+                </p>
+
+                <p>
+                    <label>Phone</label>
+                    <input type="tel" name="phone_number">
+
+                </p>
+
+                <p>
+                    <label>Email</label>
+                    <input type="email" name="email_address">
+
+                </p>
+
+
+
+                <p>
+                    <label>Checking_In_Date/Time(24h)</label>
+                    <!--  <input type="datetime-local" name="Reservation_Date/Time" required>--->
+                    <select id="year" name="Select Year">
+                        <option value="" selected="selected">Select Year</option>
+
+                        <option value="1"> 2020</option>
+                        <option value="2"> 2021</option>
+                        <option value="3"> 2022</option>
+                    </select>
+
+                    <select id="month" name="Select month">
+                        <option value="" selected="selected">Select Month</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                        <option value="6"> 6</option>
+                        <option value="7"> 7</option>
+                        <option value="8"> 8</option>
+                        <option value="9"> 9</option>
+                        <option value="10"> 10</option>
+                        <option value="11">11</option>
+                        <option value="12"> 12</option>
+                    </select>
+
+
+
+
+                    <select id="Date" name="Select Date">
+                        <option value="" selected="selected">Select Date</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                        <option value="6"> 6</option>
+                        <option value="7"> 7</option>
+                        <option value="8"> 8</option>
+                        <option value="9"> 9</option>
+                        <option value="10"> 10</option>
+                        <option value="11">11</option>
+                        <option value="12"> 12</option>
+                        <option value="13"> 13</option>
+                        <option value="1"> 14</option>
+                        <option value="2"> 15</option>
+                        <option value="3">16</option>
+                        <option value="4">17</option>
+                        <option value="5">18</option>
+                        <option value="6">19</option>
+                        <option value="7">20</option>
+                        <option value="8">21</option>
+                        <option value="9">22</option>
+                        <option value="10">23</option>
+                        <option value="11">24</option>
+                        <option value="12">25</option>
+                        <option value="13">26</option>
+                        <option value="10">27</option>
+                        <option value="11">28</option>
+                        <option value="12">29</option>
+                        <option value="13">30</option>
+                        <option value="10">31</option>
+
+                    </select>
+
+                    <select id="ETA_Hour" name="Select Time">
+                        <option value="" selected="selected">Select Hour</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="0">0</option>
+
+                    </select>
+
+                    <select id="ETA_Mintues" name="Select Time">
+                        <option value="" selected="selected">Select mintues</option>
+
+                        <option value="1">:00</option>
+                        
+                        <option value="2">:15</option>
+                         
+                        <option value="3">:30</option>
+                        
+                        <option value="4">:45</option>
+
+
+
+                    </select>
+
+
+
+                </p>
+
+                <p>
+                    <label>Checking_Out_Date/Time(24h)</label>
+                    <!--  <input type="datetime-local" name="Reservation_Date/Time" required>--->
+                    <select id="year1" name="Select Year">
+                        <option value="" selected="selected">Select Year</option>
+
+                        <option value="1"> 2020</option>
+                        <option value="2"> 2021</option>
+                        <option value="3"> 2022</option>
+                    </select>
+
+                    <select id="month1" name="Select month">
+                        <option value="" selected="selected">Select Month</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                        <option value="6"> 6</option>
+                        <option value="7"> 7</option>
+                        <option value="8"> 8</option>
+                        <option value="9"> 9</option>
+                        <option value="10"> 10</option>
+                        <option value="11">11</option>
+                        <option value="12"> 12</option>
+                    </select>
+
+
+
+
+                    <select id="Date1" name="Select Date">
+                        <option value="" selected="selected">Select Date</option>
+                        <option value="1"> 1</option>
+                        <option value="2"> 2</option>
+                        <option value="3"> 3</option>
+                        <option value="4"> 4</option>
+                        <option value="5"> 5</option>
+                        <option value="6"> 6</option>
+                        <option value="7"> 7</option>
+                        <option value="8"> 8</option>
+                        <option value="9"> 9</option>
+                        <option value="10"> 10</option>
+                        <option value="11">11</option>
+                        <option value="12"> 12</option>
+                        <option value="13"> 13</option>
+                        <option value="1"> 14</option>
+                        <option value="2"> 15</option>
+                        <option value="3">16</option>
+                        <option value="4">17</option>
+                        <option value="5">18</option>
+                        <option value="6">19</option>
+                        <option value="7">20</option>
+                        <option value="8">21</option>
+                        <option value="9">22</option>
+                        <option value="10">23</option>
+                        <option value="11">24</option>
+                        <option value="12">25</option>
+                        <option value="13">26</option>
+                        <option value="10">27</option>
+                        <option value="11">28</option>
+                        <option value="12">29</option>
+                        <option value="13">30</option>
+                        <option value="10">31</option>
+
+                    </select>
+
+                    <select id="Check_Out_Hour" name="Select Time">
+                        <option value="" selected="selected">Select Hour</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="0">0</option>
+
+                    </select>
+
+                    <select id="Check_Out_Mintues" name="Select Time">
+                        <option value="" selected="selected">Select mintues</option>
+
+                         <option value="1">:00</option>
+                        
+                        <option value="2">:15</option>
+                         
+                        <option value="3">:30</option>
+                        
+                        <option value="4">:45</option>
+
+
+
+                    </select>
+
+
+
+                </p>
+
+                <p>
+                    <label>Select_A_Room
+                        <select id="Select_A_Room" name="Select Room">
+                            <option value="" selected="selected">Select One</option>
+                            <option value="Alpes Sprite">Alpes HoneyMoon</option>
+                            <option value="Alpes Sprite">Alpes Paradise</option>
+                            <option value="Alpes Sprite">Delux Alpes Paradise</option>
+
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>The_Number_of_Room
+                        <select id="Select_The_Number_of_Room" name="Select the number of room">
+                            <option value="" selected="selected">Select One</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Select_Another_Type_Room
+                        <select id="Select_A_Room1" name="Select Room">
+                            <option value="" selected="selected">Select One</option>
+                            <option value="Alpes Sprite">Alpes Paradise</option>
+
+
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>The_Number_of_Room
+                        <select id="Select_The_Number_of_Room1" name="Select the number of room">
+                            <option value="" selected="selected">Select One</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+
+
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>Select_Third_Type_Room
+                        <select id="Select_A_Room2" name="Select Room">
+                            <option value="" selected="selected">Select One</option>
+
+                            <option value="Alpes Paradise">Delux Alpes Paradise</option>
+
+
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                    <label>The_Number_of_Room
+                        <select id="Select_The_Number_of_Room2" name="Select the number of room">
+                            <option value="" selected="selected">Select One</option>
+                            <option value="1">1</option>
+
+
+
+                        </select>
+                    </label>
+                </p>
+
+
+
+                <p>
+                    <label>Please leave comments below:
+                        <textarea name="comments" maxlength="500"></textarea>
+                    </label>
+                </p>
+
+                <p><button>Submit Booking</button></p>
+
+            </form>
+
+        </div>
+
+
+
+
+
+
+        <!--  </div>
+      <div id="Contact-Us">
+        <h2>Contact Us</h2>
+        <div>
+            <h2> <span class="ContactUs">Address: valagatan 5,Karlstad, Sweden;
+                    Tel: 077 85239021; Social Media:</span>
+                <img class="ContactUs" src="source_images/facebook.jpeg" alt="" width="80"></h2>
+         </div>  
+    </div>--->
+
+        <!---  <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>--->
+
+    </div>
+
+    <div id="Contact-Us">
+        <!-- <div id="sectionContact" class="container-fluid">
+        <div class="section-content">-->
+        <h2>Contact Us</h2>
+        <div>
+             <h2><span class="Contact Us"> Chemin de la Barmete 2, 1936 Verbier, Switzerland
+                 Tel: +41 97230976; We accept</span>
+                 <img class="ContactUs" src="originals/credit%20card%20info.png" alt="" width="80"></h2>
+        </div>
+
+
+        <div id="map"></div>
+
+        <script>
+            function initMap() {
+                var Alps = {
+                    lat: 46.555497778,
+                    lng: 8.556831106,
+                };
+                var map = new google.maps.Map(
+                    document.getElementById('map'), {
+                        zoom: 13,
+                        center: Alps
+                    });
+                var marker = new google.maps.Marker({
+                    position: Alps,
+                    map: map
+                });
+            }
+
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJnDeF1ZO8jJpSeqOt6WN38f6-XOtCl6Q&callback=initMap">
+        </script>
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-one-page-nav/3.0.0/jquery.nav.min.js" integrity="sha256-uyKq3i+Mv8CWwJ2iheLNVB5fJWs6CJAJDIoEPrbUsUc=" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $("#main-menu").onePageNav();
+
+    </script>
+
+
+
+
+</body>
+
+</html>

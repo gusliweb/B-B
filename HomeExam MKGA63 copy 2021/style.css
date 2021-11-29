@@ -1,0 +1,531 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* . the part above is CSS reset   */
+
+
+
+
+
+
+body {
+    margin: 0;
+    /* padding: 0; */
+    font-family: sans-serif;
+    /* .sans-serif is morden stylish fount     */
+}
+
+h1 {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 1em;
+    /* Since all headings using h2, I want to leave a little space from heading top and heading bottom, that's why i chose 1em  */
+    padding-bottom: 1em;
+    background-color: dimgray;
+    /* background-color: #e6ffcc;*/
+    color: white;
+    text-decoration: none;
+
+}
+
+h3 {
+    background-color: dimgrey;
+    /*  background-color: #aaff80;*/
+    color: white;
+    margin-top: auto;
+    padding-top: 0.5em;
+}
+
+
+
+
+img {
+    max-width: 100%;
+}
+
+.site-header {
+
+    position: fixed;
+    /*  the header which contain menu bar will always stay on the top of the page even you scroll the page    */
+
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 100px;
+    background: #C0C0C0;
+    /*  background: #99ccff;*/
+    width: 100%;
+    box-sizing: border-box;
+    padding-right: 1em;
+
+
+}
+
+
+
+.header-image {
+    background-color: dimgray;
+    /*  background-color: #99d6ff;*/
+    width: 100%;
+
+}
+
+.header-image img {
+    width: 100%;
+
+}
+
+
+header nav {
+    display: flex;
+    background-color: #C0C0C0;
+    /* width: 50%;.       */
+
+
+
+}
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+}
+
+
+header nav ul li a {
+
+    
+    /* menu list item animation, whenever mouse over the items. it will take 1.5s to highlight  */
+    height: 2rem;
+    line-height: 2rem;
+    padding: 0 20px;
+
+    font-size: 15px;
+    font-weight: 400;
+    position: relative;
+    text-decoration: none;
+
+
+
+
+    color: #333300;
+    /*  background-color: #6D7993;*/
+    background-color: #C0C0C0;
+
+    cursor: pointer;
+    display: block;
+    transition: all 1.5s;
+
+
+}
+
+
+header nav ul li a:hover {
+
+
+    /*  background-color: #c6ff1a;*/
+    background-color: #b2b266;
+
+
+
+
+}
+
+
+
+.menu-toggle {
+    color: #fff;
+    float: right;
+    line-height: 2rem;
+    /* since line height too close, I set ling height to be 2rem   */
+    font-size: 1em;
+    cursor: pointer;
+    display: none;
+
+
+}
+
+/*@media ( max-width: 768px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header nav ul {
+        width: 100%;
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+
+    }
+
+    header nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+
+
+
+}*/
+
+
+
+#Our-Vision {
+    /*height: 700px; */
+    display: inline-block;
+    width: 100%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: grey;
+    min-height: 300px;
+}
+
+.center {
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    
+    width: 50%;
+    padding-top: 0.5em;
+    padding-bottom: 0.3em;
+    padding-left: 0.3em;
+    /* .to divide the section into three equal part  */
+}
+
+
+
+@media screen and (max-width: 1080px) {
+    header {
+        padding: 0 20px;
+    }
+
+    header nav ul {
+        width: 100%;
+        display: block;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul.active {
+        display: block;
+    }
+
+    .menu-toggle {
+        display: block;
+
+    }
+
+    header nav ul li {
+        display: block;
+        text-align: center;
+    }
+
+   
+
+}
+
+* {
+        box-sizing: border-box;
+    }
+
+
+    .row {
+        display: flex;
+        flex-wrap: nowrap;
+       
+        
+
+    }
+
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+
+        text-align: center;
+       
+        padding-bottom: 1em;
+
+    }
+
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+
+
+
+.toggler {
+    height: 500px;
+    width: 100%;
+
+}
+
+#The-Room-Type {
+    /*  height: 700px; */
+    display: inline-block;
+    /* .all image has placed inline   */
+    width: 100%;
+    background-color: darkgray;
+
+}
+
+.bx-wrapper {
+    border-width: 0;
+    /* . The reason I set margin-bottom to be 0 is to ensure no space between bxslider image and wrapper       */
+    margin-bottom: 0;
+}
+
+.bx-pager {
+    display: none;
+}
+
+#The-Room-Type img {
+    width: 100%;
+    background-color: dimgray;
+    padding-top: 2em;
+
+
+}
+
+
+#Reserve-A-Room {
+    height: 800px;
+    display: inline-block;
+    width: 100%;
+    background-color: dimgray;
+    padding-top: 1em;
+}
+
+
+label {
+    display: block;
+    margin-top: 1em;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email],
+input[type=datetime-local],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: lightgray;
+}
+
+
+
+
+
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: darkblue;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+
+#Contact-Us {
+    /* height: 500px;*/
+    font: 15px;
+    display: inline-block;
+    width: 100%;
+    /*  background-color: #424949;*/
+
+    background-color: #f2f2f2;
+    width: 100%;
+    float: right;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 100;
+    /* padding-top: 100px;
+    padding-bottom: 4em; */
+
+    padding-top: 1em;
+    padding-bottom: 0em;
+
+
+
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+}
